@@ -52,7 +52,7 @@ public class ListaAlunosActivity extends AppCompatActivity {
         configuraLista();
     }
 
-    private void configuraLista() {
+    private void configuraLista(){
         ListView listaDeAlunos = findViewById(R.id.activity_lista_alunos_listview);
         final List<Aluno> alunos = dao.todos();
         configuraAdapter(listaDeAlunos, alunos);
